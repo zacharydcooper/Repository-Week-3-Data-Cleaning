@@ -1,0 +1,39 @@
+The best code book in history?
+Possibly.
+
+Description
+
+Source Data
+A full description of the data used in this project can be found at [The UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+
+Data Set Information
+This expirement was done on volunteers age range 19-48 years. 
+The participants performed physical activities wearing a Galaxy phone on their waist (I got an HTC One instead of a Galaxy, I kind of regret it).  The phones sensors monitored their activity.
+
+Attribute Information
+For each record in the dataset it is provided: 
+Triaxial acceleration
+Triaxial Angular 
+561-feature vector with time and frequency domain variables. 
+activity label. 
+identifier of the participant.
+
+Merged the tables together.
+features.txt
+activity_labels.txt
+subject_train.txt
+x_train.txt
+y_train.txt
+subject_test.txt
+x_test.txt
+y_test.txt
+Assign column names and merge to create one data set.
+
+
+Extracted only relevant Means and Std Deviations, as well as an identifier.
+Changed names of data to be more useful.
+
+SUBJECT - each individual subject for the test.
+ACTIVITY/ACTIVITY ID - What activity were they partaking in.
+ID - Mean for activity for person
+the rest - a bunch of boring confusing metrics for the activities changed into Means and standard deviations to calculate what each activity registered on their Galaxy.
